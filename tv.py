@@ -32,3 +32,9 @@ class Tv():
     def ChannelMinus(self, channel):
         if self.on and 1 <= channel <= 120:
             self.channel -= 1
+    def VolumePlus(self, volume):
+        if self.on and 1 <= volume <= 120:
+            self.volume += 1
+    def VolumeMinus(self, volume):
+        if self.on and 1 <= volume <= 120:
+            self.volume -= 1
