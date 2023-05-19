@@ -12,5 +12,9 @@ class Tv():
     # A function for turning the tv off   
     def TvOn(self):
         self.on = False
-    
+    # A function to get the value of "channel"
+    def GetChannel(self):
+        return self.channel
+
+
 
