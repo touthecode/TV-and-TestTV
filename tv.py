@@ -6,9 +6,4 @@ class remote_control():
         self.power = power
         self.volume = volume
         self.channel = channel
-    # Create method to change power status of tv
-    def tv_on(self):
-        if self.power == "OFF":
-            print("The TV is now turning ON!")
-        else:
-            print("Sorry but the TV is already turned ON!")
+    
