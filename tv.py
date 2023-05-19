@@ -15,6 +15,9 @@ class Tv():
     # A function to get the value of "channel"
     def GetChannel(self):
         return self.channel
-
+    # A function to set parameters on the value of "channel"
+    def SetChannel(self, channel):
+        if self.on and 1 <= channel <= 120:
+            self.channel = channel
 
 
