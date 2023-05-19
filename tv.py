@@ -2,7 +2,7 @@
 class Tv():
 
     # Create a constructor
-    def __init__(self, on = False, volume = 0, channel = 1):
+    def __init__(self, on = False, volume = 1, channel = 1):
         self.on = on
         self.volume = volume
         self.channel = channel
@@ -22,5 +22,8 @@ class Tv():
     # A function to get the value of "volume"
     def GetVolume(self):
         return self.volume
-    
+    # A function to set parameters on the value of "volume"
+    def SetVolume(self, volume):
+        if self.on and 1 <= volume <= 7:
+            self.volume = volume
 
