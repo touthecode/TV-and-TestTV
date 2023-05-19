@@ -1,9 +1,12 @@
 # Make the class
-class remote_control():
+class Tv():
 
-    # Create a parametrized constructor
-    def __init__(self, power = "OFF", volume = 0, channel = 1):
-        self.power = power
+    # Create a constructor
+    def __init__(self, on = "False", volume = 0, channel = 1):
+        self.on = on
         self.volume = volume
         self.channel = channel
-    
+    # A function for turning the tv off
+    def TvOff(self):
+        self.on = True
+
