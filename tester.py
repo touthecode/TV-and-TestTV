@@ -12,10 +12,10 @@ def main():
     5. Display current status = 5
     """)
 
-while(True):
-    remote_action = input(str("Select the number of your desired action to take: "))
-    if remote_action == "1":
-        TV.tv_on()
-    else:
-        break
+    while(True):
+        remote_action = input(str("Select the number of your desired action to take: "))
+        if remote_action == "1":
+            TV.tv_on()
+        else:
+            break
 
