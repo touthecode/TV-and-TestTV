@@ -19,5 +19,8 @@ class Tv():
     def SetChannel(self, channel):
         if self.on and 1 <= channel <= 120:
             self.channel = channel
-
+    # A function to get the value of "volume"
+    def GetVolume(self):
+        return self.volume
+    
 
